@@ -1,4 +1,4 @@
-const todo = require('../models/todo');
+
 const ToDo = require('../models/todo')
 
 exports.createTodo = (req, res, next) => {

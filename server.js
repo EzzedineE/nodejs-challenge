@@ -6,6 +6,7 @@ const userRoutes = require('./routes/users')
 const emailRoutes = require('./routes/emailRoute')
 const uploadRoutes = require('./routes/uploadRoute')
 const firstCron = require('./crons/first-cron')
+const authRoutes = require('./routes/auth')
 const app = express()
 const connect = require('./database/connect');
 const server = http.createServer(app)
@@ -16,5 +17,6 @@ app.use('/api/todo', todoRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/email', emailRoutes);
 app.use('/api/upload', uploadRoutes);
+app.use('/api/auth', authRoutes);
 
 
